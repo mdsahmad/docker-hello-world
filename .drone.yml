@@ -6,7 +6,7 @@ steps:
 - name: docker  
   image: plugins/docker
   settings:
-    registry: hub.docker.com
+    # registry: hub.docker.com
     repo: shahidahmad/dronepush
     username:
       from_secret: docker_username
