@@ -6,8 +6,8 @@ steps:
 - name: docker  
   image: plugins/docker
   settings:
-    # registry: docker.io
-    repo: juanluisbaptiste/docker-hello-world
+    registry: 'https://registry.hub.docker.com'
+    repo: shahidahmad/dronepush
     username:
       from_secret: docker_username
     password:
