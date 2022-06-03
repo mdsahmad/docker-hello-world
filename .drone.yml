@@ -4,7 +4,7 @@ name: default
 
 steps:
 - name: test
-  image: gradle:2.5-jdk8
+  image: groovy:jdk8-jammy
   commands:
   - ./gradlew assemble
   - ./gradlew check
