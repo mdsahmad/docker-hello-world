@@ -6,6 +6,6 @@ steps:
 - name: test
   image: groovy:jdk8-jammy
   commands:
-  - install gradle 7.4.2
+  - yum install gradle 7.4.2
   - ./gradlew assemble
   - ./gradlew check
