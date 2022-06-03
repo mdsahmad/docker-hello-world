@@ -1,16 +1,9 @@
 kind: pipeline
-type: docker
-name: hello-world
+name: default
 
 steps:
-- name: docker  
-  image: plugins/docker
-  settings:
-    # registry: 'https://registry.hub.docker.com'
-    repo: shahidahmad/dronepush
-    username:
-      from_secret: docker_username
-    password:
-      from_secret: docker_password
-    tags: 
-      - latest
+- name: test
+  image: gradle:2.5-jdk8
+  commands:
+  - ./gradlew assemble
+  - ./gradlew check
