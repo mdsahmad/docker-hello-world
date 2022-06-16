@@ -1,11 +1,14 @@
 ---
-project:
-  key: DRAGON
-  plan:
-    key: SLAYER
-    name: Dragon Slayer Quest
+version: 2
+plan:
+  project-key: MARS
+  key: ROCKET
+  name: Build the rocket
 stages:
-  - jobs:
-      - scripts:
-          - echo 'Going to kill the red dragon, watch me'
-...
+  - Build hull:
+    - Build
+
+Build:
+  tasks:
+    - script:
+      - echo 'Hello World!'
